@@ -10,7 +10,7 @@ angular.config(function($routeProvider, $locationProvider) {
                 controller: "LoginController" })
 
                 .when("/Termsofservice", {
-                    templateUrl: "/public/view/Navbar/Termsofservice.html",
+                    templateUrl: "/public/view/Navbar/TermsOfService.html",
                     controller: "LoginController" })
             .when("/ContactUs", {
                 templateUrl: "/public/view/Navbar/ContactUs.html",
