@@ -8,21 +8,14 @@ angular.config(function($routeProvider, $locationProvider) {
             .when("/AboutUS", {
                 templateUrl: "/public/view/Navbar/Aboutus.html",
                 controller: "LoginController" })
-                .when("/Privacypolicy", {
-                    templateUrl: "/public/view/Navbar/Privacypolicy.html",
-                    controller: "LoginController" })
+
                 .when("/Termsofservice", {
                     templateUrl: "/public/view/Navbar/Termsofservice.html",
                     controller: "LoginController" })
             .when("/ContactUs", {
                 templateUrl: "/public/view/Navbar/ContactUs.html",
                 controller: "ContactusController" })
-            .when("/PartyContact", {
-                    templateUrl: "/public/view/Navbar/partycontact.html",
-                    controller: "PartyContactController" })
-            .when("/Download", {
-                            templateUrl: "/public/view/Navbar/download.html",
-                            controller: "DownloadController" })
+
             .when("/faq", {
                 templateUrl: "/public/view/Navbar/faq.html",
                 controller: "LoginController" })
