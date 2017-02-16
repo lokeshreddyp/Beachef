@@ -1,0 +1,105 @@
+<div id="wrapper">
+
+<form name="form" ng-submit="login()" role="form">
+
+       <!-- Page Content -->
+       <div id="page-content-wrapper">
+           <div class="container" >
+<!--                first row-->
+       <div class="row">
+                  <div class="col-md-12">
+                      <h1>PartyGuard Login</h1>
+                  </div>
+       <!--First column-->
+       <div class="col-md-4">
+           <div class="md-form">
+               <i class="fa fa-user prefix"></i>
+               <input type="text" id="form41" ng-model="username" placeholder="Enter your Username" class="form-control" required>
+               <!-- <label for="form41" class="">Username</label> -->
+           </div>
+
+       </div>
+
+       <!--Second column-->
+       <div class="col-md-4">
+<!--            <div class="md-form">
+               <a class='btn btn-primary disabled'><i class="fa fa-facebook" style="width:16px; height:20px"></i></a>
+   <a class='btn btn-primary ' href='' style="width:12em"> Login with Facebook</a>
+           </div>-->
+       </div>
+
+
+   </div>
+   <!--/.first row-->
+
+<!--    second row-->
+<div class="row">
+
+       <!--First column-->
+       <div class="col-md-4">
+           <div class="md-form">
+               <i class="fa fa-lock prefix"></i>
+               <input type="password" id="form41" ng-model="password" placeholder="Enter your Password" class="form-control" required>
+               <!-- <label for="form41" class="">Password</label> -->
+           </div>
+       </div>
+
+       <!--Second column-->
+       <div class="col-md-4">
+<!--            <div class="md-form">
+           <a class='btn btn-info disabled'><i class="fa fa-twitter" style="width:16px; height:20px"></i></a>
+   <a class='btn btn-info ' href='' style="width:12em"> Login with Twitter</a>
+  </div>-->
+       </div>
+
+
+
+   </div>
+<!--    second row-->
+<!--third row-->
+<div class="row">
+
+   <div class="col-md-10">
+       <button type="submit"   class="btn btn-warning-outline">Login</button>
+       <a href="/GuardUserRegistration" class="btn btn-warning">Register as Guard</a>
+   </div>
+
+
+
+
+</div>
+<div class="row">
+  <div class="col-md-8">
+  <div class="alert alert-success" role="alert" ng-show="showSuccessAlert">
+<button type="button" class="close" data-ng-click="switchBool('showSuccessAlert')">×</button> <strong>Incorrect Login! </strong> {{successTextAlert}}</div>
+</div>
+
+
+</div>
+<div class="row">
+
+   <!-- <div class="col-md-8">
+       <a href="newCustomer.html" class="btn btn-primary-outline">Host User</a>
+       <a href="guardHP.html" class="btn btn-primary-outline">Guard User</a>
+        <a href="memberHP.html" class="btn btn-primary-outline">Basic User</a>
+   </div> -->
+   <div class="col-md-6">
+   <div class="modal-footer">
+       <div class="options">
+           <p>Want to register as Guard? <a href="/GuardUserRegistration">Sign Up</a></p>
+           <p>Forgot <a href="/forgotpwdMain">Password?</a></p>
+       </div>
+   </div>
+ </div>
+</div>
+
+<!--Third row end-->
+
+
+           </div>
+       </div>
+       <!-- /#page-content-wrapper -->
+ </form>
+   </div>
+
+   <!-- /#wrapper -->

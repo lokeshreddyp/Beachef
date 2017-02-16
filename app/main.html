@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html ng-app="PartyGuard" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!--  <meta http-equiv="x-ua-compatible" content="ie=edge">  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>BeAChef</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+
+ <link href="/lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/lib/css/bootstrap.min.css.map" rel="stylesheet">
+  <link href="/assets/dist/css/bootstrap-formhelpers.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="/lib/css/mdb.min.css" rel="stylesheet">
+<link href="/assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <!-- Your custom styles  -->
+    <link href="/lib/css/style.css" rel="stylesheet">
+    <link href="/public/view/HostUser/style.css" rel="stylesheet">
+
+
+   <link href="/lib/css/simple-sidebar.css" rel="stylesheet">
+
+   <link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css" />
+
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.standalone.css" />
+
+
+</head>
+
+<body>
+
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDWT5n4FGVWw4kPyQid1sGukbpeVTYEhlM",
+      authDomain: "beachefwebsite.firebaseapp.com",
+      databaseURL: "https://beachefwebsite.firebaseio.com",
+      storageBucket: "beachefwebsite.appspot.com",
+      messagingSenderId: "600644049240"
+    };
+    firebase.initializeApp(config);
+
+  </script>
+
+    <!-- Start your project here-->
+    <header>
+        <!--Navbar-->
+      <nav class="navbar navbar-light" style="background-color: #0299C7;">
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="container">
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+                <!--Navbar Brand-->
+                <a class="navbar-brand" href="/" style="color: #FFFFFF">BeAChef</a>
+                <!--Links-->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/ " style="color: #FFFFFF">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/AboutUS" style="color: #FFFFFF">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/HowitWorks" style="color: #FFFFFF">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq" style="color: #FFFFFF">FAQs</a>
+                    </li>
+
+
+
+
+                </ul>
+                <!--Search form-->
+
+
+            </div>
+
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+</header>
+
+<main>
+
+  <div class="container-fluid" ng-view></div>
+
+</main>
+
+<footer class=" navbar page-footer grey center-on-small-only">
+
+<!--Footer Links-->
+<div class="container-fluid">
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-6">
+            <h5 class="title">Contact us</h5>
+
+            <a href="https://www.facebook.com/Beachef-246152529162686/?ref=aymt_homepage_panel">Contact PartyGuard.</a>
+        </div>
+        <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-6">
+            <h5 class="title">Related Links</h5>
+            <ul>
+                <li><a href="/AboutUS">About BeAChef</a></li>
+                  <li><a href="/Termsofservice">Terms Of Service</a></li>
+                    <li><a href="/Privacypolicy">Privacy Policy</a></li>
+
+            </ul>
+        </div>
+        <!--/.Second column-->
+    </div>
+</div>
+<!--/.Footer Links-->
+
+<!--Copyright-->
+<div class="footer-copyright">
+    <div class="container-fluid">
+
+        <a> © 2017 BeAChef. All rights reserved.</a>
+
+    </div>
+</div>
+<!--/.Copyright-->
+
+</footer>
+
+
+
+
+    <!-- /Start your project here-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="/lib/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/lib/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/lib/js/bootstrap.min.js"></script>
+    <!-- ?<script src="assets/js/bootstrap-formhelpers-phone.format.js"></script> -->
+    <script src="/assets/dist/js/bootstrap-formhelpers.js"></script>
+    <script src="/assets/js/bootstrap-formhelpers-phone.js"></script>
+    <script src="/assets/js/bootstrap-formhelpers-timepicker.js"></script>
+    <script src="/assets/js/bootstrap-formhelpers-number.js"></script>
+    <script src="/assets/js/bootstrap-formhelpers-datepicker.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/lib/js/mdb.min.js"></script>
+
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBqWF9WfR9pF23nK8Sd_MteauJraBCRpU&libraries=places&callback=initAutocomplete" async="defer"></script> -->
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script> -->
+  <script type="text/javascript" src="/lib/angular/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-cookies.js"></script>
+<script src="/node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script>
+<script src="/node_modules/ng-img-crop/compile/minified/ng-img-crop.js"></script>
+<link rel="stylesheet" type="text/css" href="/node_modules/ng-img-crop/compile/minified/ng-img-crop.css">
+
+<script src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+
+<!-- Dashboard -->
+<script src="/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/assets/plugins/pace/pace.js"></script>
+    <script src="/assets/scripts/siminta.js"></script>
+
+    <!-- Page-Level Plugin Scripts-->
+    <script src="/assets/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="/assets/plugins/morris/morris.js"></script>
+    <script src="/assets/scripts/dashboard-demo.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.6.7.min.js"></script>
+  <!-- <script src="/scripts/userController.js"></script> -->
+  <!-- <script src="/modules/authentication/services.js"></script>
+ <script src="/modules/authentication/controller.js"></script> -->
+ <!-- COntroler Js files -->
+ <script src="/public/config/config.js"></script>
+   <script src="/public/controller/authentication/controller.js"></script>
+ <script src="/public/controller/authentication/services.js"></script>
+ <script src="/public/controller/authentication/Login.js"></script>
+   <script src="/public/controller/AddCustomer.js"></script>
+ <script src="/public/controller/members.js"></script>
+ <script src="/public/controller/BasicUser.js"></script>
+ <script src="/public/controller/GuardUser.js"></script>
+  <script src="/public/controller/Guardregistration.js"></script>
+ <script src="/public/controller/newcustomer.js"></script>
+ <script src="/public/controller/HouseLocation.js"></script>
+ <script src="/public/controller/HouseProfile.js"></script>
+ <script src="/public/controller/Addack.js"></script>
+ <script src="/public/controller/default.js"></script>
+  <script src="/public/controller/Events.js"></script>
+  <script src="/public/controller/viewcustomer.js"></script>
+  <script src="/public/controller/BasicPassowrd.js"></script>
+  <script src="/public/controller/HouseProfileEdit.js"></script>
+  <script src="/public/controller/contactus.js"></script>
+
+<script src="/public/controller/guardevents.js"></script>
+<script src="/public/controller/guarduseredit.js"></script>
+<script src="/public/controller/basicuseredit.js"></script>
+<script src="/public/controller/contactus.js"></script>
+<script src="/public/controller/EditEvents.js"></script>
+<script src="/public/controller/AssignGuards.js"></script>
+<script src="/public/controller/Dashboard.js"></script>
+<script src="/public/controller/eventconfirmation.js"></script>
+<script src="/public/controller/guardpassword.js"></script>
+<script src="/public/controller/Forgotpassword.js"></script>
+
+
+
+
+ <!-- <script src="/public/view/MasterUser/googlescript.js"></script> -->
+
+
+
+
+
+
+ <script>
+ $("#menu-toggle").click(function(e) {
+     e.preventDefault();
+     $("#wrapper").toggleClass("toggled");
+ });
+  $("#menu-toggle-2").click(function(e) {
+     e.preventDefault();
+     $("#wrapper").toggleClass("toggled-2");
+     $('#menu ul').hide();
+ });
+
+  function initMenu() {
+   $('#menu ul').hide();
+   $('#menu ul').children('.current').parent().show();
+   //$('#menu ul:first').show();
+   $('#menu li a').click(
+     function() {
+       var checkElement = $(this).next();
+       if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+         return false;
+         }
+       if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+         $('#menu ul:visible').slideUp('normal');
+         checkElement.slideDown('normal');
+         return false;
+         }
+       }
+     );
+   }
+ $(document).ready(function() {initMenu();});
+ </script>
+
+
+
+
+
+</body>
+</html>

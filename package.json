@@ -1,0 +1,15 @@
+{
+  "name": "email-node",
+  "version": "1.0.0",
+  "devDependencies": {
+    "nodemailer": "v0.7.1",
+    "express": "latest"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "firebase": "^3.6.9"
+  }
+}

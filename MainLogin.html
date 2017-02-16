@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html ng-app="PartyGuard" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>PartyGuard</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="/css/mdb.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <!-- <link href="lib/css/style.css" rel="stylesheet">
+<link href="lib/css/simple-sidebar.css" rel="stylesheet"> -->
+
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+
+        html,
+        body,
+        .view {
+            height: 100%;
+        }
+        /* Navigation*/
+
+        .navbar {
+            background-color: transparent;
+        }
+
+        .scrolling-navbar {
+            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+
+        .top-nav-collapse {
+            background-color: #1C2331;
+        }
+
+        footer.page-footer {
+            background-color: #1C2331;
+            margin-top: -1px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #1C2331;
+            }
+        }
+        /*Call to action*/
+
+        .flex-center {
+            color: #fff;
+        }
+
+        .view {
+            background: url("https://s12.postimg.org/uensfg1bh/Dance_Party.jpg")no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="container">
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <!--Navbar Brand-->
+                <a class="navbar-brand" href="index.html" >PartyGuard</a>
+                <!--Links-->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+
+                </ul>
+                <!--Search form-->
+            <form class="form-inline">
+<!--                    <input class="form-control" type="text" placeholder="Search">-->
+
+<!--                   <a class="navbar-brand" href="addCustomer.html">Login</a>-->
+                   <a  href="MainLogin.html" class="btn btn-warning-outline">Logout</a>
+                </form>
+            </div>
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Mask-->
+    <div class="view hm-black-strong">
+        <div class="full-bg-img flex-center">
+
+
+<!--    main-->
+<main>
+ <div id="wrapper">
+
+
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container" >
+<!--                first row-->
+        <div class="row">
+                   <div class="col-md-12">
+                       <h1>PartyGuard Login</h1>
+                   </div>
+        <!--First column-->
+        <div class="col-md-6">
+            <div class="md-form">
+                <i class="fa fa-user prefix"></i>
+                <input type="text" id="form41" class="form-control">
+                <label for="form41" class="">Username</label>
+            </div>
+        </div>
+
+        <!--Second column-->
+        <div class="col-md-4">
+<!--            <div class="md-form">
+
+               	<a class='btn btn-primary disabled'><i class="fa fa-facebook" style="width:16px; height:20px"></i></a>
+		<a class='btn btn-primary ' href='' style="width:12em"> Login with Facebook</a>
+
+            </div>-->
+        </div>
+
+
+    </div>
+    <!--/.first row-->
+
+<!--    second row-->
+ <div class="row">
+
+        <!--First column-->
+        <div class="col-md-6">
+            <div class="md-form">
+                <i class="fa fa-lock prefix"></i>
+                <input type="text" id="form41" class="form-control">
+                <label for="form41" class="">Password</label>
+            </div>
+        </div>
+
+        <!--Second column-->
+        <div class="col-md-4">
+<!--            <div class="md-form">
+          	<a class='btn btn-info disabled'><i class="fa fa-twitter" style="width:16px; height:20px"></i></a>
+		<a class='btn btn-info ' href='' style="width:12em"> Login with Twitter</a>
+	 </div>-->
+        </div>
+
+
+
+    </div>
+<!--    second row-->
+<!--third row-->
+<div class="row">
+
+    <div class="col-md-10">
+        <a href="addCustomer.html" class="btn btn-warning-outline">Login</a>
+        <a href="GuardUserRegistration.html" class="btn btn-warning-outline">Register as Guard</a>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+
+</div>
+<div class="row">
+
+
+
+</div>
+<div class="row">
+
+    <div class="col-md-8">
+        <a href="/AddCustomer" class="btn btn-primary-outline">Host User</a>
+        <a href="guardHP.html" class="btn btn-primary-outline">Guard User</a>
+         <a href="memberHP.html" class="btn btn-primary-outline">Basic User</a>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+
+</div>
+
+<!--Third row end-->
+
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+</main>
+
+       </div>
+
+     </div>
+    <!--/.Mask-->
+<!--main-->
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+       <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6">
+                <h5 class="title">Contact us</h5>
+                <p>Contact PartyGuard.</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6">
+                <h5 class="title">Related Links</h5>
+                <ul>
+                    <li><a href="#!">About PartyGuard</a></li>
+                    <li><a href="#!">Employment</a></li>
+                    <li><a href="#!">Maps and Directions</a></li>
+                    <li><a href="#!">Emergency Information</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+
+            <a> © 2016 PartyGuard. All rights reserved.</a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/js/mdb.min.js"></script>
+
+    <script src="/angular/angular.min.js"></script>
+  <script src="Scripts/userController.js"></script>
+
+
+</body>
+
+</html>
