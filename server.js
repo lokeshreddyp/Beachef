@@ -1,6 +1,6 @@
 'use strict';
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 var express = require("express");
 var nodemailer = require("nodemailer");
 var firebase = require("firebase");
@@ -172,7 +172,10 @@ app.use("/", function(req, res, next){
 //     console.log("Node server initialized. Server's port:"+port);
 // });
 
-var server = app.listen(process.env.PORT || 8080, function () {
-    var port = server.address().port;
-    console.log("App now running on port", port);
-  });
+// var server = app.listen(process.env.PORT || 8080, function () {
+//     var port = server.address().port;
+//     console.log("App now running on port", port);
+//   });
+app.listen(port , () =>{
+  console.log(`port is up and running on ${port}`);
+})
